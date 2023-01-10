@@ -15,4 +15,19 @@ function printNumberSortByReverse(arr) {
 }
 printNumberSortByReverse(data2)
 
-// ㅇ
+// 배열에 담긴 특정 문자 갯수 세기 - 소문자 s 빈도수 세기
+
+const dataset = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]    
+
+
+function countCharArr(arr, char) {
+    let cnt = 0;
+    char = 'a'
+
+  const total = arr.join('')
+ Array.from(total).map(
+   oneChar => oneChar === char ? cnt +=1 : null
+  )
+  return cnt
+}
+countCharArr(dataset)
